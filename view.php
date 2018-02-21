@@ -3,7 +3,6 @@ include('./inc/page-begin.php');
 
 $dirname = "uploads/";
 $contents = scandir($dirname);
-//$images = glob($dirname. "*.jpg");
 
 
 foreach($contents as $image) {
@@ -15,4 +14,3 @@ foreach($contents as $image) {
 
 include('./inc/page-end.php');
 
-//<img src="http:\\localhost\site\img\mypicture.jpg"/>

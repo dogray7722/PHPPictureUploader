@@ -7,7 +7,8 @@ $contents = scandir($dirname);
 
 foreach($contents as $image) {
     if (is_file($dirname . $image))
-    print '<img src="/sessiontester2/uploads/'.$image.'" /><br />';
+    print '<img class="img-fluid img-thumbnail 
+    rounded float-left" src="/phppictureuploader/uploads/'.$image.'"/><br />';
 
 }
 

@@ -8,7 +8,7 @@ require_once('initialize.php');
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <base href="phppictureuploader/index.php">
+    <base href="sessiontester2/index.php">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
@@ -45,14 +45,14 @@ if(!isset($_SESSION['loggedin'])) {
                     <a class='nav-link active' href='../upload.php'>Upload</a>
                 </li>
                  <li class='nav-item'>
-                    <a class='nav-link active' href='#'>View</a>
+                    <a class='nav-link active' href='../view.php'>View</a>
                 </li>
             </ul>
         </nav>";
     }
 ?>
 <br>
-<div class='container-fluid page-wrap'>
+<div class='container-fluid'>
     <header class='p-2 mb-2 bg-success text-gray-dark col-5 rounded'>
         <h1 class='display-4' >Picture Uploader</h1>
     </header>

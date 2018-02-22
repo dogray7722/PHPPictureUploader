@@ -3,15 +3,21 @@ include('./inc/page-begin.php');
 
 $dirname = "uploads/";
 $contents = scandir($dirname);
+?>
 
-
+<div id="wrapper">
+<?php
 foreach($contents as $image) {
     if (is_file($dirname . $image))
-    print '<img class="img-fluid img-thumbnail 
-    rounded float-left" src="/phppictureuploader/uploads/'.$image.'"/><br />';
+    print '<div class="pics"><img class="img-fluid img-thumbnail 
+    rounded float-left" src="/sessiontester2/uploads/'.$image.'"/></div>';
 
 }
+?>
+</div>
 
+<div id="push"></div>
 
+<?php
 include('./inc/page-end.php');
-
+?>

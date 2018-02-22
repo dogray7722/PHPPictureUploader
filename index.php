@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 ?>
 
 <h2>Enter your first and last name below:</h2>
-    <form action="/phppictureuploader/index.php" method="post">
+    <form action="/sessiontester2/index.php" method="post">
         <div class="form-group">
             <label for="formGroupExampleInput">First Name:</label>
             <div class="col-4">
@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </div>
         <button type="submit" class="btn btn-success">Submit</button>
 </form>
-</div>
+
 <?php
 include('./inc/page-end.php');
 ?>

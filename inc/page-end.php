@@ -9,7 +9,8 @@
             </div>
             <div class="col-sm-4">
                 <h6>About Us</h6>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequuntur corporis dolore, doloribus eius ex excepturi ipsa iste minus mollitia nesciunt.</p>
+                <p>We pride ourselves on developing quality applications that follow specifications to the letter,
+                    providing an unmatched customer experience</p>
             </div>
             <div class="col-sm-2">
                 <h6>Navigation</h6>
@@ -31,8 +32,7 @@
                 </ul>
             </div>
     </div>
+    </div>
 </footer>
-
-
 </body>
 </html>

@@ -10,7 +10,7 @@ $contents = scandir($dirname);
 foreach($contents as $image) {
     if (is_file($dirname . $image))
     print '<div class="pics"><img class="img-fluid img-thumbnail 
-    rounded float-left" src="/sessiontester2/uploads/'.$image.'"/></div>';
+    rounded float-left" src="/pictureuploader/uploads/'.$image.'"/></div>';
 
 }
 ?>

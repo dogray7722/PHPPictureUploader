@@ -21,7 +21,7 @@ if (isset($_POST['submit'])) {
     $upload_dir = "uploads";
 
     if (move_uploaded_file($tmp_file, $upload_dir."/".$target_file)) {
-        $message = 'File uploaded successfully. <br><a href="/sessiontester2/view.php">Click here</a> to view your uploads';
+        $message = 'File uploaded successfully. <br><a href="/pictureuploader/view.php">Click here</a> to view your uploads';
 
     } else {
         $error = $_FILES['file_upload']['error'];

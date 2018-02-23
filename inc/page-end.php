@@ -10,7 +10,7 @@
             <div class="col-sm-4">
                 <h6>About Us</h6>
                 <p>We pride ourselves on developing quality applications that follow specifications to the letter,
-                    providing an unmatched customer experience</p>
+                    and which provide an unmatched customer experience</p>
             </div>
             <div class="col-sm-2">
                 <h6>Navigation</h6>

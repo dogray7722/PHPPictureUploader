@@ -1,5 +1,4 @@
 <!--page end-->
-<br>
 <footer class="footer bg-inverse">
     <div class="container">
         <div class="row">
@@ -36,3 +35,7 @@
 </footer>
 </body>
 </html>
+
+<?php
+    db_disconnect($db);
+?>

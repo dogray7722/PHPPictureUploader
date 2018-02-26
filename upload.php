@@ -21,7 +21,7 @@ if (isset($_POST['submit'])) {
     $upload_dir = "uploads";
 
     if (move_uploaded_file($tmp_file, $upload_dir."/".$target_file)) {
-        $message = 'File uploaded successfully. <br><a href="/pictureuploader/view.php">Click here</a> to view your uploads';
+        $message = 'File uploaded successfully. <br><a href="/PHPPictureUploader/view.php">Click here</a> to view your uploads';
 
     } else {
         $error = $_FILES['file_upload']['error'];
@@ -38,7 +38,7 @@ if (isset($_POST['submit'])) {
 ?>
 
 <?php if(!empty($message)) { echo "<p>{$message}</p>"; } ?>
-<form action="/sessiontester2/upload.php" enctype="multipart/form-data" method="post">
+<form action="/PHPPictureUploader/upload.php" enctype="multipart/form-data" method="post">
 
     <label class="custom-file">
         <input type="file" id="file" name="file_upload" class="custom-file-input">

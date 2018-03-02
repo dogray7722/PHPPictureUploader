@@ -53,7 +53,7 @@ if (isset($_POST['submit'])) {
         <div class="form-group row">
             <div class="col-sm-2">
                 <label for="pic_title">Picture Title:</label>
-                <input class="form-control" id="pic_title" type="text" name="picture_title">
+                <input class="form-control" id="pic_title" type="text" name="picture_title" required>
             </div>
         </div>
         <div class="form-group">

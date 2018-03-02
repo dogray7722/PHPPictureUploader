@@ -1,6 +1,7 @@
 
 * {
     margin: 0;
+    padding: 0;
 }
 
 html, body {
@@ -9,24 +10,33 @@ html, body {
     padding: 0;
 }
 
-#wrapper {
-
+#internalcontent {
     min-height: 100%;
-    margin-bottom: -145px;
+    margin: 10px;
 }
 
-.push {
-    height: 145px;
-    position: relative;
+#main {
+    overflow: auto;
+    padding-bottom: 145px;
+}
+
+.header {
+    margin-left: 5px;
+}
+
+.card-block {
+    border-style: groove;
+    border-width: 1px
 }
 
 .footer {
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
     color: white;
     height: 145px;
     margin-top: -145px;
+    clear: both;
     padding: 15px;
 }

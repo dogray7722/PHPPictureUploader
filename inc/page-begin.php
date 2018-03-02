@@ -52,8 +52,9 @@ if(!isset($_SESSION['loggedin'])) {
     }
 ?>
 <br>
-<div class='container-fluid'>
-    <header class='p-2 mb-2 bg-success text-gray-dark col-5 rounded'>
+    <header class='header p-2 mb-2 bg-success text-gray-dark col-5 rounded'>
         <h1 class='display-4' >Picture Uploader</h1>
     </header>
+    <section class="container-fluid" id="internalcontent">
+        <div id="main">
 <!--page begin-->

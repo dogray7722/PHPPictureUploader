@@ -18,7 +18,8 @@ if (isset($_GET['id'])) {
                         <input type="submit" class="btn-danger" name="submit" value="Delete Pic">
                     </form>
                     </div>
-                </div>';
+                </div>
+                <br>';
     }
 } elseif (isset($_POST['id'])) {
     $query = "SELECT * FROM imagedata WHERE id={$_POST['id']}";
@@ -29,7 +30,9 @@ if (isset($_GET['id'])) {
         $del = "DELETE from imagedata WHERE id={$_POST['id']} LIMIT 1";
         $delResult = mysqli_query($db, $del);
         if (mysqli_affected_rows($db) == 1) {
-            print '<h2>The picture was deleted successfully!</h2>';
+            print '<h2>The picture was deleted successfully!</h2>
+                <br><a href="/PHPPictureUploader/view.php">Click here</a> to view your pictures
+                <br><a href="/PHPPictureUploader/upload.php">Click here</a> to upload more pictures';
         }
     }
 }

@@ -1,4 +1,6 @@
 <!--page end-->
+</div>
+</section>
 <footer class="footer bg-inverse">
     <div class="container">
         <div class="row">

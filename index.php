@@ -17,7 +17,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         print '<p class="text-danger">Please enter both a first and last name!</p>';
     }
 }
-
 ?>
 
 <h2>Enter your first and last name below:</h2>

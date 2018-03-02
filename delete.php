@@ -24,7 +24,7 @@ if (isset($_GET['id'])) {
     $query = "SELECT * FROM imagedata WHERE id={$_POST['id']}";
     if ($result = mysqli_query($db, $query)) {
         $row = mysqli_fetch_array($result);
-        $path = ".".$row['path'];
+        $path = $row['path'];
         unlink($path);
         $del = "DELETE from imagedata WHERE id={$_POST['id']} LIMIT 1";
         $delResult = mysqli_query($db, $del);
@@ -34,7 +34,4 @@ if (isset($_GET['id'])) {
     }
 }
 
-//}
-
-//mysqli_free_result($result);
 include('./inc/page-end.php');

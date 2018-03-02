@@ -20,7 +20,7 @@ if (isset($_POST['submit'])) {
     $target_file = basename($_FILES['file_upload']['name']);
     $upload_dir = "uploads";
 
-    //Set a variable to capture file extension
+    //Set a variable to capture file extension, and do some validation on upload target
     $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
     $title = trim(strip_tags($_POST['picture_title']));
 
@@ -43,7 +43,6 @@ if (isset($_POST['submit'])) {
         }
     }
 }
-
 ?>
 
 <?php if(!empty($message)) { echo "<p>{$message}</p>"; } ?>
@@ -60,7 +59,7 @@ if (isset($_POST['submit'])) {
             <label for="file">File type must be JPG, JPEG, PNG or GIF.</label>
             <input type="file" id="file" name="file_upload" class="form-control-file">
             <input type="hidden" name="MAX_FILE_SIZE" value="10000000"><br>
-            <input type="submit" name="submit" value="Upload">
+            <input type="submit" class="btn btn-outline-success" name="submit" value="Upload">
         </div>
     </form>
 <?php

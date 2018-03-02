@@ -24,9 +24,17 @@ html, body {
     margin-left: 5px;
 }
 
-.card-block {
+.card-block, .rounded {
     border-style: groove;
     border-width: 1px
+}
+
+.card-text {
+    margin-left: 10px
+}
+
+.card-text span {
+    margin-right: 10px;
 }
 
 .footer {

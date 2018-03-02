@@ -12,14 +12,15 @@ if (isset($_GET['id'])) {
                         <h1>Delete Picture</h1>
                         <p>Are you sure you want to delete this picture:</p>
                         <img class="img-fluid img-thumbnail rounded" src="/PHPPictureUploader/'.$row['path'].'"/>
-                        <div class="rounded" style="border-style: groove; border-width: 1px">
-                        <h5 style="margin-left: 10px">'.ucfirst($row['title']).'</h5></div><br>        
-                        <input type="hidden" name="id" value="' . $_GET['id'] . '">
-                        <input type="submit" class="btn-danger" name="submit" value="Delete Pic">
+                            <div class="rounded">
+                                <h6 style="margin-left: 10px">'.ucfirst($row['title']).'</h6>
+                            </div><br>        
+                            <input type="hidden" name="id" value="' . $_GET['id'] . '">
+                            <input type="submit" class="btn btn-danger" name="submit" value="Delete Pic">
                     </form>
-                    </div>
                 </div>
-                <br>';
+               </div>
+               <br>';
     }
 } elseif (isset($_POST['id'])) {
     $query = "SELECT * FROM imagedata WHERE id={$_POST['id']}";

@@ -10,7 +10,7 @@ if ($result = mysqli_query($db, $sql)) {
             print
                 '<div>
                    <div id="pictures" class="card">
-                   <img style="width: 100%" class="card-img-top img-thumbnail rounded float-left" src="/PHPPictureUploader/' .$row['path'].'"/>
+                   <img  class="card-img-top img-thumbnail rounded float-left" src="/PHPPictureUploader/' .$row['path'].'"/>
                         <div class="card-block rounded">
                         <h6 class="card-text" style="margin-left: 10px">'.ucfirst($row['title']).'
                             <span style="margin-right: 10px" class="float-right">
